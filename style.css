@@ -1,0 +1,223 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+
+/* Menu */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: 75px;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button, .search-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-button:hover, .search-button:hover {
+    background-color: #2c3e50;
+}
+
+.search-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.menu {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.menu-link {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.6;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background-color: #101112;
+    opacity: 1;
+}
+
+.menu-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-link:hover::before,
+.menu-link.active::before {
+    opacity: 1;
+}
+
+.menu-text {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, left 0.3s ease;
+    background-color: #101112;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.menu li:hover .menu-text {
+    opacity: 1;
+    left: 30px;
+}
+
+/* Parralax */
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    min-height: 100vh; /* Ganti height menjadi min-height */
+}
+
+#section1 {
+    background-image: url("img/bg-1.jpg");
+}
+
+.profile-box {
+    width: 850px;
+    height: 350px; /* Sesuaikan dengan tinggi yang diinginkan */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: left; /* Teks diatur ke kiri */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan konten secara vertikal */
+	overflow: hidden
+}
+
+.profile-box-content {
+    display: flex;
+    align-items: center; /* Pusatkan gambar dan teks secara vertikal */
+}
+
+.profile-image {
+    width: 300px; /* Sesuaikan lebar gambar */
+    height: auto; /* Agar tinggi gambar disesuaikan dengan lebar */
+    margin-right: 20px; /* Spasi antara gambar dan teks */
+}
+
+.profile-text {
+    flex: 1; /* Teks akan mengisi sisa ruang yang tersedia */
+	font-size: 20px;
+}
+
+#section2 {
+    background-image: url("img/bg-2.jpg");
+}
+
+#section3 {
+    background-image: url("img/bg-3.jpg");
+}
+
+#section4 {
+    background-image: url("img/bg-4.jpg");
+}
+
+#section5 {
+    background-image: url("img/bg-5.jpg");
+}
+
+.parallax-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	height: 90%;
+    width: 85%; /* Lebar konten 85% dari halaman paralaks */
+    margin: 0 auto; /* Tengahkan konten */
+}
+
+/* Footer Credit */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #101112;
+    color: whitesmoke;
+}
