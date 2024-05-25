@@ -6,12 +6,102 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 				<link href="img/favicon.ico" rel="icon" type="image/x-icon">
   					<link rel="stylesheet" href="style.css">
-    					<title>Forizon Store</title>
+    					<title>Patbel Community</title>
 </head>
 <body>
+	
+	<img src="img/logo-web.png" alt="Logo Patbel" class="logo">
+	
+	<div class="buttons-container">
+        <button class="nav-button" onclick="window.location.href='patbel-news.html'">News</button>
+        <button class="nav-button" onclick="window.location.href='patbel-forum.html'">Forum</button>
+        <button class="search-button" onclick="toggleSearchBox()"><i class="fa fa-search"></i></button>
+        <div class="search-box" id="searchBox">
+            <input type="text" id="searchInput" placeholder="Search">
+        </div>
+    </div>
+	
+	<div class="menu">
+        <ul>
+            <li>
+                <a href="#section1" class="menu-link" data-target="section1"></a>
+                <span class="menu-text text-section1">Welcome&#33;</span>
+            </li>
+            <li>
+                <a href="#section2" class="menu-link" data-target="section2"></a>
+                <span class="menu-text text-section2">Profile Sekolah</span>
+            </li>
+            <li>
+                <a href="#section3" class="menu-link" data-target="section3"></a>
+                <span class="menu-text text-section3">Upload Terbaru</span>
+            </li>
+            <li>
+                <a href="#section4" class="menu-link" data-target="section4"></a>
+                <span class="menu-text text-section4">Tim Developer</span>
+            </li>
+            <li>
+                <a href="#section5" class="menu-link" data-target="section5"></a>
+                <span class="menu-text text-section5">Partnership</span>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="parallax-section" id="section1">
+        <div class="parallax-content">
+            <h1></h1>
+        </div>
+    </div>
 
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+	<div class="parallax-section" id="section2">
+    	<div class="parallax-content">
+			<div class="profile-box">
+            <div class="profile-box-content">
+                <img src="img/logo-patbel.png" alt="Profile Image" class="profile-image">
+                <div class="profile-text">
+                    <h1>SMK NEGERI 14 JAKARTA</h1>
+                    <p>Salah satu sekolah Pusat Keunggulan Kemendikbud tahun 2022 dengan 4 program keahlian, yaitu Otomatisasi Perkantoran, Akuntansi Keuangan Lembaga, Bisnis Daring Pemasaran dan Desain Komunikasi Visual.</p>
+                </div>
+            </div>
+        	</div>
+    	</div>
+	</div>
 
+    <div class="parallax-section" id="section3">
+        <div class="parallax-content">
+            <h2>UPLOAD TERBARU</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+
+    <div class="parallax-section" id="section4">
+        <div class="parallax-content">
+            <h2>TIM DEVELOPER</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+	
+    <div class="parallax-section" id="section5">
+        <div class="parallax-content">
+            <h2>PARTNERSHIP</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+	
+    <footer>
+		<h2>Lokasi Sekolah</h2>
+				<iframe
+        		width="100%"
+        		height="200"
+        		frameborder="0"
+        		style="border:0"
+        		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5859996268277!2d106.85420817413066!3d-6.186119860609047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f45a7a428aa3%3A0x75dc9161f3a7c131!2sSMKN%2014%20JAKARTA!5e0!3m2!1sid!2sid!4v1709092506881!5m2!1sid!2sid"
+        		allowfullscreen
+				loading="Sibuk"
+				referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+				<p>Jl. Percetakan Negara IIA No.2, RT.11/RW.6, Johar Baru, Kec. Johar Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10560</p>
+        <p>All rights reserved &copy; Copyright 2024, Patbel Community.</p>
+    </footer>
+	<script src="script.js"></script>
 </body>
 </html>
